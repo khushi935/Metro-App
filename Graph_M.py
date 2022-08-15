@@ -45,7 +45,7 @@ class Graph_M:
         heapq.heappush(stack,[0,src1])
         while(stack):
             dis,city=heapq.heappop(stack)
-            if city==src2:return "Shortest time from "+src1+" to "+src2+" is "+str(dis)+" MIN."
+            if city==src2:return "Fare from "+src1+" to "+src2+" is "+str(dis)+" MIN."
             for i,j in self.graph[city]:
                 if dis+j<distance[self.vtcs[i]]:
                     distance[self.vtcs[i]]=dis+j
@@ -133,7 +133,7 @@ if __name__=="__main__":
         print("1. LIST ALL THE STATIONS IN THE MAP")
         print("2. SHOW THE METRO MAP")
         print("3. GET SHORTEST DISTANCE FROM A 'SOURCE' STATION TO 'DESTINATION' STATION")
-        print("4. GET SHORTEST TIME FROM A 'SOURCE' STATION TO 'DESTINATION' STATION")
+        print("4. GET FARE FROM A 'SOURCE' STATION TO 'DESTINATION' STATION")
         print("5. GET ALL SHORTEST PATH (DISTANCE WISE) TO REACH FROM A 'SOURCE' STATION TO 'DESTINATION' STATION")
         print("6. EXIT THE MENU")
         choice=input("\nENTER YOUR CHOICE FROM THE ABOVE LIST (1 to 7) : ")
