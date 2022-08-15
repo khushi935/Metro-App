@@ -1,0 +1,2 @@
+The project can run on any online or offline Integrated Development Environment (IDE) like Eclipse, Netbeans, ideone.com, etc.
+You should have at least elementary knowledge of Python Programming language to work on the project.
